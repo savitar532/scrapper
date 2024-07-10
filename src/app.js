@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 app.get('/productDetails',(req,res)=>{
     scrape((data)=>{
-        res.send({data})
+        res.send({...data})
     })
 })
 
